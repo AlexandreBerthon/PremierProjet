@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    private TextView text = null;
+
     @Override       //On redéfinit une méthode qui existait auparavant
     protected void onCreate(Bundle savedInstanceState) {//Ici le bundle sert si on retroune a l'appli de sauvegarder les données
         super.onCreate(savedInstanceState);     //Super veut dire que on fait appel a la superclasse cad la classe juste au dessus
@@ -17,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        TextView text = new TextView(this);
-        text.setText("Bonjour, vous me devez 1 000 000 000");
+        text = new TextView(this);
+        text.setText("");
         setContentView(text);
     }
 }
