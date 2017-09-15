@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         text = new TextView(this);
-        text.setText("Hello");
+        text.setText("fyufyui");
         setContentView(text);
     }
 }
